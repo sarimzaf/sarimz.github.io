@@ -1,119 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Miriam Venturini - Assistant Professor</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .header {
-            background-color: #114e47;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .header a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        .profile-pic {
-            display: block;
-            margin: 0 auto;
-            width: 150px;
-            border-radius: 50%;
-        }
-        .content {
-            text-align: center;
-            padding: 20px;
-        }
-        h1 {
-            margin-top: 0;
-        }
-        .content a {
-            color: #0056b3;
-            text-decoration: none;
-        }
-        .content p {
-            margin-bottom: 20px;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            padding: 20px;
-        }
-        .contact-icons {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-        }
-        .contact-icons a {
-            color: #007bff;
-            font-size: 24px;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        .cv {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #114e47;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sarim Zafar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+      text-align: left;
+      padding-left: 20px;
+    }
+    nav {
+      margin: 0 auto;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #007bff;
+    }
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      margin: 40px 0;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Sarim Zafar</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#code">Code</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <div class="header">
-        <a href="#">Home</a>
-        <a href="#">Research</a>
-        <a href="#">Work in Progress</a>
-        <a href="#">Contact</a>
-    </div>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>This section provides an overview of who you are, your background, and your interests.</p>
+    </section>
 
-    <div class="container">
-        <div class="content">
-            <img src="https://via.placeholder.com/150" alt="Miriam Venturini" class="profile-pic">
-            <h1>Miriam Venturini</h1>
-            <h2>Assistant Professor</h2>
-            <a href="https://ucr.edu">University of California Riverside</a><br>
-            <a href="https://econ.ucr.edu">Department of Economics</a>
+    <section id="research">
+      <h2>Research</h2>
+      <p>Details about your research, publications, and areas of expertise can go here.</p>
+    </section>
 
-            <p>I am an Assistant Professor at the Department of Economics of the University of California Riverside.</p>
+    <section id="code">
+      <h2>Code</h2>
+      <p>Link to your GitHub repositories and showcase the projects you've worked on.</p>
+    </section>
 
-            <p>I am a political economist and economic historian. My current research examines the role of grassroots organizations in political participation. In my job market paper, I focus on U.S. labor unions and study how a large-scale corruption scandal hindered their ability to mobilize workers and voters.</p>
+    <section id="cv">
+      <h2>CV</h2>
+      <p>Add a link to your CV or resume here, or provide a summary of your experience.</p>
+      <p><a href="path/to/your-cv.pdf" target="_blank">Download CV</a></p> <!-- Replace with actual link to your CV -->
+    </section>
 
-            <p>I graduated with a Ph.D. in Economics from the University of Zurich in July 2024. I earned my M.Sc. in economics at the Barcelona Graduate School of Economics (Universitat Pompeu Fabra) in 2017 and my B.A. in International Studies from University of Trieste. My research interests include political economy, economic history, labor economics, and development economics.</p>
-
-            <p>You can contact me at <a href="mailto:miriam.venturini@ucr.edu">miriam.venturini@ucr.edu</a> or <a href="mailto:miriam.venturini@econ.uzh.ch">miriam.venturini@econ.uzh.ch</a>.</p>
-
-            <div class="contact-icons">
-                <a href="#"><i class="fa fa-envelope"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-            </div>
-
-            <a href="#" class="cv">Download my CV</a>
-        </div>
-    </div>
-
-    <div class="footer">
-        References
-    </div>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Provide your email or social media links for others to reach out to you.</p>
+      <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p> <!-- Replace with your email -->
+    </section>
+  </main>
 
 </body>
 </html>
