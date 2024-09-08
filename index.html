@@ -13,58 +13,93 @@
             padding: 0;
             background-color: #f8f9fa;
         }
+
+        /* Container for the whole page */
         .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
         }
-        .header {
-            background-color: #114e47;
-            color: white;
+
+        /* Left column: image, name, position */
+        .left-column {
+            width: 30%;
             padding: 20px;
             text-align: center;
         }
-        .header a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
+
         .profile-pic {
-            display: block;
-            margin: 0 auto;
             width: 150px;
             border-radius: 50%;
+            margin-bottom: 20px;
         }
-        .content {
-            text-align: center;
-            padding: 20px;
-        }
+
         h1 {
+            font-size: 24px;
             margin-top: 0;
         }
-        .content a {
+
+        h2 {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .left-column a {
             color: #0056b3;
             text-decoration: none;
         }
-        .content p {
-            margin-bottom: 20px;
+
+        /* Right column: text */
+        .right-column {
+            width: 70%;
+            padding: 20px;
         }
+
+        .right-column p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* Top navigation */
+        .header {
+            background-color: #114e47;
+            color: white;
+            padding: 10px 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .header a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        /* Footer */
         .footer {
             text-align: center;
             margin-top: 30px;
             padding: 20px;
         }
+
+        /* Contact icons */
         .contact-icons {
             display: flex;
             justify-content: center;
             margin: 20px 0;
         }
+
         .contact-icons a {
             color: #007bff;
             font-size: 24px;
-            margin: 0 15px;
+            margin: 0 10px;
             text-decoration: none;
         }
+
+        /* CV Button */
         .cv {
             display: inline-block;
             margin-top: 20px;
@@ -78,6 +113,7 @@
 </head>
 <body>
 
+    <!-- Navigation bar -->
     <div class="header">
         <a href="#">Home</a>
         <a href="#">Research</a>
@@ -85,21 +121,15 @@
         <a href="#">Contact</a>
     </div>
 
+    <!-- Page content with two columns -->
     <div class="container">
-        <div class="content">
+        <!-- Left column -->
+        <div class="left-column">
             <img src="https://via.placeholder.com/150" alt="Miriam Venturini" class="profile-pic">
             <h1>Miriam Venturini</h1>
             <h2>Assistant Professor</h2>
             <a href="https://ucr.edu">University of California Riverside</a><br>
             <a href="https://econ.ucr.edu">Department of Economics</a>
-
-            <p>I am an Assistant Professor at the Department of Economics of the University of California Riverside.</p>
-
-            <p>I am a political economist and economic historian. My current research examines the role of grassroots organizations in political participation. In my job market paper, I focus on U.S. labor unions and study how a large-scale corruption scandal hindered their ability to mobilize workers and voters.</p>
-
-            <p>I graduated with a Ph.D. in Economics from the University of Zurich in July 2024. I earned my M.Sc. in economics at the Barcelona Graduate School of Economics (Universitat Pompeu Fabra) in 2017 and my B.A. in International Studies from University of Trieste. My research interests include political economy, economic history, labor economics, and development economics.</p>
-
-            <p>You can contact me at <a href="mailto:miriam.venturini@ucr.edu">miriam.venturini@ucr.edu</a> or <a href="mailto:miriam.venturini@econ.uzh.ch">miriam.venturini@econ.uzh.ch</a>.</p>
 
             <div class="contact-icons">
                 <a href="#"><i class="fa fa-envelope"></i></a>
@@ -109,8 +139,20 @@
 
             <a href="#" class="cv">Download my CV</a>
         </div>
+
+        <!-- Right column -->
+        <div class="right-column">
+            <p>I am an Assistant Professor at the Department of Economics of the University of California Riverside.</p>
+
+            <p>I am a political economist and economic historian. My current research examines the role of grassroots organizations in political participation. In my job market paper, I focus on U.S. labor unions and study how a large-scale corruption scandal hindered their ability to mobilize workers and voters.</p>
+
+            <p>I graduated with a Ph.D. in Economics from the University of Zurich in July 2024. I earned my M.Sc. in economics at the Barcelona Graduate School of Economics (Universitat Pompeu Fabra) in 2017 and my B.A. in International Studies from University of Trieste. My research interests include political economy, economic history, labor economics, and development economics.</p>
+
+            <p>You can contact me at <a href="mailto:miriam.venturini@ucr.edu">miriam.venturini@ucr.edu</a> or <a href="mailto:miriam.venturini@econ.uzh.ch">miriam.venturini@econ.uzh.ch</a>.</p>
+        </div>
     </div>
 
+    <!-- Footer -->
     <div class="footer">
         References
     </div>
